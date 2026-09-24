@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <!-- Ajuste para telemóveis -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+
+    <meta name="theme-color" content="#17133B">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <title>AIRES SERVICES</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ================================= -->
+<!-- FUNDO ANIMADO -->
+<!-- ================================= -->
+
+<div class="fundo-animado">
+
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+
+</div>
+
+
+<!-- ================================= -->
+<!-- ELEMENTOS TECNOLÓGICOS DECORATIVOS -->
+<!-- ================================= -->
+
+<div class="elementos-tech">
+
+    <!-- Laptop -->
+    <div class="tech-laptop">
+
+        <div class="tela"></div>
+
+        <div class="base"></div>
+
+    </div>
+
+
+    <!-- Telemóvel -->
+    <div class="tech-phone">
+
+        <div class="phone-tela"></div>
+
+    </div>
+
+
+    <!-- Interface -->
+    <div class="tech-window">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+
+</div>
+
+
+<!-- ================================= -->
+<!-- CABEÇALHO -->
+<!-- ================================= -->
+
+<header class="topo">
+
+    <div class="logo">
+
+        <img
+            src="imagens/logo.png"
+            alt="AIRES SERVICES">
+
+    </div>
+
+
+    <button
+        class="menu-btn"
+        onclick="abrirMenu()"
+        aria-label="Abrir menu">
+
+        ☰
+
+    </button>
+
+</header>
+
+
+
+<!-- ================================= -->
+<!-- MENU -->
+<!-- ================================= -->
+
+<nav id="menu">
+
+    <button onclick="mostrarPagina('inicio')">
+
+        <span>Início</span>
+
+    </button>
+
+
+    <button onclick="mostrarPagina('servicos')">
+
+        <span>Serviços</span>
+
+    </button>
+
+
+    <button onclick="mostrarPagina('pedidos')">
+
+        <span>Meus pedidos</span>
+
+    </button>
+
+
+    <button onclick="mostrarPagina('chat')">
+
+        <span>Atendimento</span>
+
+    </button>
+
+
+    <button onclick="mostrarPagina('perfil')">
+
+        <span>Perfil</span>
+
+    </button>
+
+</nav>
+
+
+
+<!-- ================================= -->
+<!-- CONTEÚDO PRINCIPAL -->
+<!-- ================================= -->
+
+<main>
+
+
+
+<!-- ================================= -->
+<!-- INÍCIO -->
+<!-- ================================= -->
+
+<section id="inicio" class="pagina ativa">
+
+
+    <div class="hero">
+
+        <h1>
+
+            Bem-vindo à
+
+            <strong>
+                AIRES SERVICES
+            </strong>
+
+        </h1>
+
+
+        <p>
+
+            Soluções digitais para pessoas
+            e empresas.
+
+        </p>
+
+
+        <button
+            class="botao-principal"
+            onclick="mostrarPagina('servicos')">
+
+            Ver serviços
+
+        </button>
+
+    </div>
+
+
+
+    <div class="cartao">
+
+        <h2>
+            Precisa de ajuda?
+        </h2>
+
+
+        <p>
+
+            Fale diretamente com a
+            AIRES SERVICES.
+
+        </p>
+
+
+        <button
+            class="botao-secundario"
+            onclick="mostrarPagina('chat')">
+
+            Falar connosco
+
+        </button>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ================================= -->
+<!-- SERVIÇOS -->
+<!-- ================================= -->
+
+<section id="servicos" class="pagina">
+
+
+    <h1>
+        Nossos serviços
+    </h1>
+
+
+    <div class="servicos">
+
+
+
+        <!-- ========================= -->
+        <!-- CRIAÇÃO DE SITES -->
+        <!-- ========================= -->
+
+        <div class="servico">
+
+            <h2>
+                Criação de Sites
+            </h2>
+
+
+            <p>
+
+                Criamos sites modernos
+                para empresas e projetos.
+
+            </p>
+
+
+            <strong>
+                4.250 Kz
+            </strong>
+
+
+            <button
+                onclick="solicitarServico('Criação de Site')">
+
+                Solicitar
+
+            </button>
+
+        </div>
+
+
+
+        <!-- ========================= -->
+        <!-- LOGOTIPO -->
+        <!-- ========================= -->
+
+        <div class="servico">
+
+            <h2>
+                Logotipo
+            </h2>
+
+
+            <p>
+
+                Criação de identidade visual.
+
+            </p>
+
+
+            <strong>
+                2.000 Kz
+            </strong>
+
+
+            <button
+                onclick="solicitarServico('Criação de Logotipo')">
+
+                Solicitar
+
+            </button>
+
+        </div>
+
+
+
+        <!-- ========================= -->
+        <!-- PANFLETO -->
+        <!-- ========================= -->
+
+        <div class="servico">
+
+            <h2>
+                Panfleto
+            </h2>
+
+
+            <p>
+
+                Design de panfletos digitais.
+
+            </p>
+
+
+            <strong>
+                2.050 Kz
+            </strong>
+
+
+            <button
+                onclick="solicitarServico('Design de Panfleto')">
+
+                Solicitar
+
+            </button>
+
+        </div>
+
+
+
+        <!-- ========================= -->
+        <!-- POSTER -->
+        <!-- ========================= -->
+
+        <div class="servico">
+
+            <h2>
+                Poster
+            </h2>
+
+
+            <p>
+
+                Posters profissionais
+                para divulgação.
+
+            </p>
+
+
+            <strong>
+                2.050 Kz
+            </strong>
+
+
+            <button
+                onclick="solicitarServico('Design de Poster')">
+
+                Solicitar
+
+            </button>
+
+        </div>
+
+
+
+        <!-- ========================= -->
+        <!-- EDIÇÃO DE VÍDEO -->
+        <!-- ========================= -->
+
+        <div class="servico">
+
+            <h2>
+                Edição de Vídeo
+            </h2>
+
+
+            <p>
+
+                Edição de vídeos para
+                redes sociais e divulgação.
+
+            </p>
+
+
+            <strong>
+                3.050 Kz
+            </strong>
+
+
+            <button
+                onclick="solicitarServico('Edição de Vídeo')">
+
+                Solicitar
+
+            </button>
+
+        </div>
+
+
+
+        <!-- ========================= -->
+        <!-- MARKETING DIGITAL -->
+        <!-- ========================= -->
+
+        <div class="servico marketing-card">
+
+
+            <div class="icone-linha">
+
+                <span></span>
+
+            </div>
+
+
+            <h2>
+                Marketing Digital
+            </h2>
+
+
+            <p>
+
+                Pacotes de marketing para
+                diferentes necessidades.
+
+            </p>
+
+
+            <strong>
+
+                Mini • Médio • Premium
+
+            </strong>
+
+
+            <button
+                class="botao-marketing"
+                onclick="mostrarPacotesMarketing()">
+
+                Ver opções
+
+            </button>
+
+
+        </div>
+
+
+    </div>
+
+
+
+<!-- ================================= -->
+<!-- PACOTES DE MARKETING -->
+<!-- ================================= -->
+
+<div
+    id="pacotes-marketing"
+    class="pacotes-marketing">
+
+
+    <h2>
+        Pacotes de Marketing
+    </h2>
+
+
+    <p class="subtitulo-pacotes">
+
+        Escolha o pacote que melhor corresponde
+        às suas necessidades.
+
+    </p>
+
+
+
+    <!-- ========================= -->
+    <!-- PACOTE MINI -->
+    <!-- ========================= -->
+
+    <div class="pacote">
+
+
+        <button
+            class="cabecalho-pacote"
+            onclick="mostrarBeneficios('mini')">
+
+
+            <span>
+                Pacote Mini
+            </span>
+
+
+            <span class="seta">
+                +
+            </span>
+
+
+        </button>
+
+
+
+        <div
+            id="beneficios-mini"
+            class="beneficios-pacote">
+
+
+            <h3>
+                Pacote Mini
+            </h3>
+
+
+            <p class="preco-pacote">
+                5.150 Kz
+            </p>
+
+
+            <p>
+                Duração: 7 dias
+            </p>
+
+
+            <ul>
+
+                <li>
+                    2 designs de poster
+                </li>
+
+                <li>
+                    1 design de panfleto
+                </li>
+            </ul>
+
+
+            <button
+                class="botao-solicitar-pacote"
+                onclick="solicitarPacote('Pacote Mini')">
+
+                Solicitar pacote
+
+            </button>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ========================= -->
+    <!-- PACOTE MÉDIO -->
+    <!-- ========================= -->
+
+    <div class="pacote">
+
+
+        <button
+            class="cabecalho-pacote"
+            onclick="mostrarBeneficios('medio')">
+
+
+            <span>
+                Pacote Médio
+            </span>
+
+
+            <span class="seta">
+                +
+            </span>
+
+
+        </button>
+
+
+
+        <div
+            id="beneficios-medio"
+            class="beneficios-pacote">
+
+
+            <h3>
+                Pacote Médio
+            </h3>
+
+
+            <p class="preco-pacote">
+                7.350 Kz
+            </p>
+
+
+            <p>
+                Duração: 15 dias
+            </p>
+
+
+            <ul>
+
+                <li>
+                    2 designs de poster
+                </li>
+
+                <li>
+                    1 design de panfleto
+                </li>
+
+                <li>
+                    1 criação de logotipo
+                </li>
+
+            </ul>
+
+
+            <button
+                class="botao-solicitar-pacote"
+                onclick="solicitarPacote('Pacote Médio')">
+
+                Solicitar pacote
+
+            </button>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ========================= -->
+    <!-- PACOTE PREMIUM -->
+    <!-- ========================= -->
+
+    <div class="pacote">
+
+
+        <button
+            class="cabecalho-pacote"
+            onclick="mostrarBeneficios('premium')">
+
+
+            <span>
+                Pacote Premium
+            </span>
+
+
+            <span class="seta">
+                +
+            </span>
+
+
+        </button>
+
+
+
+        <div
+            id="beneficios-premium"
+            class="beneficios-pacote">
+
+
+            <h3>
+                Pacote Premium
+            </h3>
+
+
+            <p class="preco-pacote">
+                12.550 Kz
+            </p>
+
+
+            <p>
+                Duração: 30 dias
+            </p>
+
+
+            <ul>
+
+                <li>
+                    5 designs de poster
+                </li>
+
+                <li>
+                    2 designs de panfleto
+                </li>
+
+                <li>
+                    1 criação de site
+                </li>
+
+                <li>
+                    Identidade visual integrada
+            
+
+            </ul>
+
+
+            <button
+                class="botao-solicitar-pacote"
+                onclick="solicitarPacote('Pacote Premium')">
+
+                Solicitar pacote
+
+            </button>
+
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+</section>
+
+
+
+<!-- ================================= -->
+<!-- NOVO PEDIDO -->
+<!-- ================================= -->
+
+<section
+    id="novo-pedido"
+    class="pagina">
+
+
+    <h1>
+        Solicitar serviço
+    </h1>
+
+
+    <div class="formulario">
+
+
+        <label>
+            Nome
+        </label>
+
+
+        <input
+            type="text"
+            id="nome-cliente"
+            placeholder="Digite o seu nome">
+
+
+
+        <label>
+            Telefone / WhatsApp
+        </label>
+
+
+        <input
+            type="tel"
+            id="telefone-cliente"
+            placeholder="Ex: 923000000">
+
+
+
+        <label>
+            Serviço
+        </label>
+
+
+        <input
+            type="text"
+            id="servico-escolhido"
+            readonly>
+
+
+
+        <label>
+            Descrição do pedido
+        </label>
+
+
+        <textarea
+            id="descricao-pedido"
+            placeholder="Explique o que precisa..."
+            rows="6"></textarea>
+
+
+
+        <button
+            class="botao-principal"
+            onclick="criarPedido()">
+
+            Enviar pedido
+
+        </button>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================= -->
+<!-- MEUS PEDIDOS -->
+<!-- ================================= -->
+
+<section
+    id="pedidos"
+    class="pagina">
+
+
+    <h1>
+        Meus pedidos
+    </h1>
+
+
+    <div id="lista-pedidos">
+
+
+        <div class="cartao">
+
+
+            <h2>
+                Nenhum pedido ainda
+            </h2>
+
+
+            <p>
+
+                Os pedidos que fizeres
+                aparecerão aqui.
+
+            </p>
+
+
+            <button
+                class="botao-principal"
+                onclick="mostrarPagina('servicos')">
+
+                Escolher serviço
+
+            </button>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ================================= -->
+<!-- CHAT / ATENDIMENTO -->
+<!-- ================================= -->
+
+<section
+    id="chat"
+    class="pagina">
+
+
+    <h1>
+        Atendimento
+    </h1>
+
+
+    <div class="chat">
+
+
+        <div class="mensagem empresa">
+
+
+            <strong>
+                AIRES SERVICES
+            </strong>
+
+
+            <p>
+                Olá!
+            </p>
+
+
+            <p>
+                Como podemos ajudá-lo?
+            </p>
+
+
+        </div>
+
+
+
+        <div class="opcoes-chat">
+
+
+            <button
+                onclick="responder('servicos')">
+
+                Quero conhecer os serviços
+
+            </button>
+
+
+
+            <button
+                onclick="responder('pedido')">
+
+                Quero fazer um pedido
+
+            </button>
+
+
+
+            <button
+                onclick="responder('humano')">
+
+                Falar com atendente
+
+            </button>
+
+
+        </div>
+
+
+
+        <div id="resposta-chat"></div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ================================= -->
+<!-- PERFIL -->
+<!-- ================================= -->
+<!-- ================================= -->
+<!-- PERFIL -->
+<!-- ================================= -->
+
+<section id="perfil" class="pagina">
+
+    <h1>Meu perfil</h1>
+
+
+    <!-- PERFIL GUARDADO -->
+
+    <div
+        id="perfil-guardado"
+        class="perfil-cartao"
+        style="display: none;">
+
+        <div class="perfil-status">
+            ✓ Perfil guardado
+        </div>
+
+
+        <div class="dados-perfil">
+
+            <div class="dado-perfil">
+
+                <span>Nome</span>
+
+                <strong id="perfil-nome-guardado">
+                </strong>
+
+            </div>
+
+
+            <div class="dado-perfil">
+
+                <span>Contacto</span>
+
+                <strong id="perfil-telefone-guardado">
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <button
+            class="botao-principal"
+            onclick="editarPerfil()">
+
+            Alterar perfil
+
+        </button>
+
+    </div>
+
+
+
+    <!-- FORMULÁRIO DO PERFIL -->
+
+    <div
+        id="formulario-perfil"
+        class="formulario">
+
+
+        <label>
+            Nome
+        </label>
+
+
+        <input
+            type="text"
+            id="perfil-nome"
+            placeholder="Digite o seu nome">
+
+
+        <label>
+            Telefone / WhatsApp
+        </label>
+
+
+        <input
+            type="tel"
+            id="perfil-telefone"
+            placeholder="Ex: 923000000">
+
+
+        <button
+            class="botao-principal"
+            onclick="guardarPerfil()">
+
+            Guardar informações
+
+        </button>
+
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- ================================= -->
+<!-- JAVASCRIPT -->
+<!-- ================================= -->
+
+<script src="script.js"></script>
+
+
+
+<!-- ================================= -->
+<!-- SERVICE WORKER -->
+<!-- ================================= -->
+
+<script>
+
+    if ("serviceWorker" in navigator) {
+
+        window.addEventListener("load", function() {
+
+            navigator.serviceWorker
+                .register("service-worker.js")
+
+                .then(function() {
+
+                    console.log(
+                        "AIRES SERVICES: Service Worker registrado."
+                    );
+
+                })
+
+                .catch(function(erro) {
+
+                    console.log(
+                        "Erro ao registrar Service Worker:",
+                        erro
+                    );
+
+                });
+
+        });
+
+    }
+
+</script>
+
+
+</body>
+
+</html>

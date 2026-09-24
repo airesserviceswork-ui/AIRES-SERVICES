@@ -1,0 +1,1424 @@
+/* ==================================================
+AIRES SERVICES
+DESIGN RESPONSIVO — MOBILE FIRST
+================================================== */
+
+/* ===============================
+CONFIGURAÇÃO GERAL
+================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+
+
+/* Impede elementos de ficarem maiores que o ecrã */
+
+img,
+video,
+iframe {
+max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+font-family: inherit;
+max-width: 100%;
+}
+html {
+    width: 100vw;
+    min-width: 0;
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    min-width: 0;
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
+
+    overflow-x: hidden;
+
+    font-family: Arial, sans-serif;
+    background: #0b0b0b;
+    color: white;
+}
+
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+/* ===============================
+CABEÇALHO
+================================ */
+
+.topo {
+width: 100%;
+height: 65px;
+
+background: #111111;
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+padding: 0 15px;
+
+border-bottom: 1px solid #292929;
+
+position: relative;
+
+}
+
+/* ================================= */
+/* LOGOTIPO */
+/* ================================= */
+
+.logo {
+
+    width: 58px;
+    height: 58px;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #ffffff;
+
+    border: 2px solid rgba(139, 92, 246, 0.75);
+
+    box-shadow:
+        0 0 10px rgba(139, 92, 246, 0.35),
+        0 0 25px rgba(79, 140, 255, 0.20);
+
+}
+
+
+.logo img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    image-rendering: auto;
+
+    filter:
+        contrast(1.08)
+        saturate(1.08)
+        brightness(1.04);
+
+}
+/* ===============================
+MENU
+================================ */
+
+nav {
+width: 100%;
+max-width: 100%;
+
+display: none;
+
+background: #151515;
+
+padding: 8px;
+
+border-bottom: 1px solid #292929;
+
+overflow: hidden;
+
+}
+
+nav.aberto {
+display: flex;
+
+flex-direction: column;
+
+width: 100%;
+
+}
+
+nav button {
+width: 100%;
+min-height: 48px;
+
+background: transparent;
+
+color: white;
+
+border: none;
+
+padding: 12px 15px;
+
+text-align: left;
+
+font-size: 16px;
+
+cursor: pointer;
+
+border-radius: 7px;
+
+}
+
+nav button:hover {
+background: #252525;
+}
+
+/* ===============================
+CONTEÚDO PRINCIPAL
+================================ */
+
+main {
+width: 100%;
+max-width: 100%;
+
+margin: 0;
+padding: 0;
+
+overflow-x: hidden;
+
+}
+
+/* ===============================
+PÁGINAS
+================================ */
+
+.pagina {
+display: none;
+
+width: 100%;
+max-width: 900px;
+
+margin: 0 auto;
+
+padding: 25px 15px;
+
+overflow: hidden;
+
+}
+
+.pagina.ativa {
+display: block;
+}
+
+.pagina h1 {
+width: 100%;
+
+margin-bottom: 20px;
+
+font-size: 25px;
+
+line-height: 1.3;
+
+overflow-wrap: break-word;
+
+}
+
+/* ===============================
+HERO
+================================ */
+
+.hero {
+width: 100%;
+
+text-align: center;
+
+padding: 40px 5px;
+
+}
+
+.hero h1 {
+width: 100%;
+
+font-size: 28px;
+
+line-height: 1.3;
+
+overflow-wrap: break-word;
+
+}
+
+.hero strong {
+display: block;
+
+color: #e50909;
+
+margin-top: 5px;
+
+}
+
+.hero p {
+color: #bbbbbb;
+
+margin: 15px 0 25px;
+
+line-height: 1.5;
+
+overflow-wrap: break-word;
+
+}
+
+/* ===============================
+BOTÕES
+================================ */
+
+button {
+font-family: inherit;
+
+-webkit-tap-highlight-color: transparent;
+
+}
+
+.botao-principal {
+display: inline-flex;
+
+align-items: center;
+justify-content: center;
+
+min-height: 45px;
+
+max-width: 100%;
+
+background: #e50909;
+
+color: white;
+
+border: none;
+
+border-radius: 8px;
+
+padding: 12px 20px;
+
+font-size: 16px;
+
+cursor: pointer;
+
+}
+
+.botao-principal:hover {
+background: #ff2020;
+}
+
+.botao-secundario {
+display: inline-flex;
+
+align-items: center;
+justify-content: center;
+
+min-height: 45px;
+
+max-width: 100%;
+
+background: #222;
+
+color: white;
+
+border: 1px solid #444;
+
+border-radius: 8px;
+
+padding: 12px 18px;
+
+font-size: 15px;
+
+cursor: pointer;
+
+}
+
+/* ===============================
+CARTÕES
+================================ */
+
+.cartao {
+width: 100%;
+max-width: 100%;
+
+background: #151515;
+
+border: 1px solid #292929;
+
+border-radius: 12px;
+
+padding: 18px;
+
+margin-top: 20px;
+
+overflow: hidden;
+
+}
+
+.cartao h2 {
+margin-bottom: 10px;
+
+font-size: 20px;
+
+overflow-wrap: break-word;
+
+}
+
+.cartao p {
+color: #aaa;
+
+margin-bottom: 15px;
+
+line-height: 1.5;
+
+overflow-wrap: break-word;
+
+}
+
+/* ===============================
+SERVIÇOS
+================================ */
+
+.servicos {
+width: 100%;
+max-width: 100%;
+
+display: grid;
+
+grid-template-columns: minmax(0, 1fr);
+
+gap: 15px;
+
+}
+
+.servico {
+width: 100%;
+min-width: 0;
+max-width: 100%;
+
+background: #151515;
+
+border: 1px solid #292929;
+
+border-radius: 12px;
+
+padding: 18px;
+
+overflow: hidden;
+
+}
+
+.servico h2 {
+width: 100%;
+
+font-size: 18px;
+
+line-height: 1.35;
+
+margin-bottom: 10px;
+
+overflow-wrap: break-word;
+
+}
+
+.servico p {
+color: #aaa;
+
+line-height: 1.5;
+
+margin-bottom: 15px;
+
+overflow-wrap: break-word;
+
+}
+
+.servico strong {
+display: block;
+
+color: #e50909;
+
+font-size: 18px;
+
+margin-bottom: 15px;
+
+overflow-wrap: break-word;
+
+}
+
+.servico button {
+min-height: 42px;
+
+background: #e50909;
+
+color: white;
+
+border: none;
+
+border-radius: 7px;
+
+padding: 10px 15px;
+
+font-size: 15px;
+
+cursor: pointer;
+
+}
+
+/* ===============================
+CHAT
+================================ */
+
+.chat {
+width: 100%;
+max-width: 100%;
+
+background: #111;
+
+border-radius: 12px;
+
+padding: 15px;
+
+min-height: 400px;
+
+overflow: hidden;
+
+}
+
+.mensagem {
+width: fit-content;
+
+max-width: 90%;
+
+padding: 13px;
+
+border-radius: 10px;
+
+margin-bottom: 20px;
+
+overflow-wrap: break-word;
+
+}
+
+.mensagem.empresa {
+background: #202020;
+}
+
+.mensagem p {
+margin-top: 8px;
+
+line-height: 1.4;
+
+}
+
+.opcoes-chat {
+width: 100%;
+
+display: flex;
+
+flex-direction: column;
+
+gap: 10px;
+
+}
+
+.opcoes-chat button {
+width: 100%;
+min-height: 48px;
+
+background: #191919;
+
+color: white;
+
+border: 1px solid #333;
+
+border-radius: 8px;
+
+padding: 12px;
+
+text-align: left;
+
+font-size: 14px;
+
+cursor: pointer;
+
+overflow-wrap: break-word;
+
+}
+
+.opcoes-chat button:hover {
+border-color: #e50909;
+}
+
+#resposta-chat {
+width: 100%;
+
+margin-top: 20px;
+
+overflow-wrap: break-word;
+
+}
+
+/* ===============================
+FORMULÁRIO
+================================ */
+
+.formulario {
+width: 100%;
+max-width: 100%;
+
+background: #151515;
+
+padding: 18px;
+
+border-radius: 12px;
+
+overflow: hidden;
+
+}
+
+.formulario label {
+display: block;
+
+width: 100%;
+
+margin: 15px 0 7px;
+
+font-size: 15px;
+
+}
+
+.formulario input,
+.formulario textarea {
+display: block;
+
+width: 100%;
+max-width: 100%;
+
+padding: 13px;
+
+background: #0c0c0c;
+
+color: white;
+
+border: 1px solid #333;
+
+border-radius: 7px;
+
+outline: none;
+
+font-family: Arial, sans-serif;
+
+font-size: 16px;
+
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+border-color: #e50909;
+}
+
+.formulario textarea {
+resize: vertical;
+
+min-height: 130px;
+
+max-height: 350px;
+
+}
+
+.formulario button {
+margin-top: 20px;
+
+width: 100%;
+
+}
+
+/* ===============================
+PEDIDOS
+================================ */
+
+#lista-pedidos {
+width: 100%;
+max-width: 100%;
+}
+
+.pedido-card {
+width: 100%;
+max-width: 100%;
+
+background: #151515;
+
+border: 1px solid #292929;
+
+border-radius: 12px;
+
+padding: 18px;
+
+margin-bottom: 15px;
+
+overflow: hidden;
+
+}
+
+.pedido-card h2 {
+color: #e50909;
+
+margin-bottom: 10px;
+
+font-size: 19px;
+
+overflow-wrap: break-word;
+
+}
+
+.pedido-card p {
+color: #cccccc;
+
+line-height: 1.5;
+
+margin-bottom: 8px;
+
+overflow-wrap: break-word;
+
+}
+
+.pedido-status {
+display: inline-block;
+
+max-width: 100%;
+
+background: #332b00;
+
+color: #ffd900;
+
+padding: 6px 10px;
+
+border-radius: 20px;
+
+font-size: 13px;
+
+margin-top: 10px;
+
+}
+
+/* ==================================================
+TELEMÓVEIS PEQUENOS
+320px — 480px
+================================================== */
+
+@media (max-width: 480px) {
+
+.topo {
+    height: 60px;
+
+    padding: 0 12px;
+}
+
+
+.logo img {
+    width: 48px;
+    max-width: 48px;
+}
+
+
+.menu-btn {
+    width: 42px;
+    height: 42px;
+
+    font-size: 26px;
+}
+
+
+.pagina {
+    padding: 20px 12px;
+}
+
+
+.pagina h1 {
+    font-size: 23px;
+
+    margin-bottom: 18px;
+}
+
+
+.hero {
+    padding: 35px 5px;
+}
+
+
+.hero h1 {
+    font-size: 25px;
+}
+
+
+.hero p {
+    font-size: 14px;
+}
+
+
+.cartao,
+.servico,
+.formulario {
+    padding: 15px;
+}
+
+
+.servico h2 {
+    font-size: 17px;
+}
+
+
+.servico p {
+    font-size: 14px;
+}
+
+
+.servico strong {
+    font-size: 17px;
+}
+
+
+.botao-principal,
+.botao-secundario {
+    width: 100%;
+}
+
+
+.mensagem {
+    max-width: 95%;
+}
+
+}
+
+/* ==================================================
+TABLETS
+================================================== */
+
+@media (min-width: 600px) {
+
+.pagina {
+    padding: 30px 20px;
+}
+
+
+.servicos {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+}
+
+/* ==================================================
+COMPUTADORES
+================================================== */
+
+@media (min-width: 900px) {
+
+.topo {
+    padding: 0 30px;
+}
+
+
+.menu-btn {
+    display: none;
+}
+
+
+nav {
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 5px;
+
+    padding: 8px;
+}
+
+
+nav button {
+    width: auto;
+
+    padding: 12px 18px;
+
+    text-align: center;
+}
+
+
+.pagina {
+    padding: 35px 20px;
+}
+
+
+.servicos {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+}
+
+/* ==================================================
+ECRÃS GRANDES
+================================================== */
+
+@media (min-width: 1200px) {
+
+.pagina {
+    max-width: 1000px;
+}
+
+}
+/* =============================== */
+/* PACOTES DE MARKETING */
+/* =============================== */
+
+.pacotes-marketing {
+
+    display: none;
+
+    margin-top: 30px;
+    padding: 20px;
+
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(25, 20, 55, 0.95),
+            rgba(9, 15, 35, 0.98)
+        );
+
+    border: 1px solid rgba(130, 90, 255, 0.35);
+
+    box-shadow:
+        0 0 30px rgba(90, 70, 220, 0.15);
+
+}
+
+
+.pacotes-marketing.visivel {
+
+    display: block;
+
+    animation: aparecerPacotes 0.45s ease;
+
+}
+
+
+@keyframes aparecerPacotes {
+
+    from {
+
+        opacity: 0;
+        transform: translateY(20px);
+
+    }
+
+    to {
+
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+
+}
+
+
+.pacotes-marketing h2 {
+
+    margin-bottom: 8px;
+
+}
+
+
+.subtitulo-pacotes {
+
+    opacity: 0.75;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* CARTÃO DO PACOTE */
+
+.pacote {
+
+    margin-bottom: 14px;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(120, 100, 255, 0.25);
+
+    background:
+        rgba(255, 255, 255, 0.035);
+
+}
+
+
+/* BOTÃO DO PACOTE */
+
+.cabecalho-pacote {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 18px;
+
+    border: none;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    text-align: left;
+
+}
+
+
+.cabecalho-pacote:hover {
+
+    background:
+        rgba(120, 90, 255, 0.10);
+
+}
+
+
+.seta {
+
+    font-size: 22px;
+
+    color: #a98cff;
+
+}
+
+
+/* BENEFÍCIOS */
+
+.beneficios-pacote {
+
+    display: none;
+
+    padding: 0 18px 20px;
+
+}
+
+
+.beneficios-pacote.aberto {
+
+    display: block;
+
+    animation: abrirBeneficios 0.3s ease;
+
+}
+
+
+@keyframes abrirBeneficios {
+
+    from {
+
+        opacity: 0;
+        transform: translateY(-8px);
+
+    }
+
+    to {
+
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+
+}
+
+
+.preco-pacote {
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    background:
+        linear-gradient(
+            90deg,
+            #8b5cf6,
+            #4f8cff,
+            #c04cff
+        );
+
+    -webkit-background-clip: text;
+
+    background-clip: text;
+
+    color: transparent;
+
+}
+
+
+.beneficios-pacote ul {
+
+    padding-left: 20px;
+
+}
+
+
+.beneficios-pacote li {
+
+    margin-bottom: 9px;
+
+    opacity: 0.9;
+
+}
+
+
+/* BOTÃO SOLICITAR */
+
+.botao-solicitar-pacote {
+
+    width: 100%;
+
+    margin-top: 15px;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    background:
+        linear-gradient(
+            135deg,
+            #7655ff,
+            #a83cff,
+            #d24b91
+        );
+
+    box-shadow:
+        0 5px 20px rgba(130, 70, 255, 0.25);
+
+    transition: 0.25s;
+
+}
+
+
+.botao-solicitar-pacote:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 25px rgba(130, 70, 255, 0.40);
+
+}
+.logo {
+
+    width: 52px;
+    height: 52px;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 0 20px rgba(139, 92, 246, 0.35);
+
+}
+
+
+.logo img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+/* =============================== */
+/* FUNDO ANIMADO */
+/* =============================== */
+
+.fundo-animado {
+
+    position: fixed;
+
+    inset: 0;
+
+    overflow: hidden;
+
+    pointer-events: none;
+
+    z-index: -1;
+
+}
+
+
+.orb {
+
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    border-radius: 50%;
+
+    filter: blur(70px);
+
+    opacity: 0.18;
+
+    animation:
+        flutuarOrb 10s infinite alternate ease-in-out;
+
+}
+
+
+.orb-1 {
+
+    top: 5%;
+    left: -40px;
+
+    background: #6546ff;
+
+}
+
+
+.orb-2 {
+
+    top: 45%;
+    right: -50px;
+
+    background: #a83cff;
+
+    animation-delay: 2s;
+
+}
+
+
+.orb-3 {
+
+    bottom: -50px;
+    left: 35%;
+
+    background: #d24b91;
+
+    animation-delay: 4s;
+
+}
+
+
+@keyframes flutuarOrb {
+
+    0% {
+
+        transform:
+            translate(0, 0)
+            scale(1);
+
+    }
+
+    50% {
+
+        transform:
+            translate(40px, -30px)
+            scale(1.15);
+
+    }
+
+    100% {
+
+        transform:
+            translate(-30px, 40px)
+            scale(0.9);
+
+    }
+
+}
+.elementos-tech {
+
+    position: fixed;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    z-index: -1;
+
+    opacity: 0.12;
+
+}
+
+
+.tech-laptop {
+
+    position: absolute;
+
+    width: 90px;
+    height: 60px;
+
+    top: 25%;
+    right: 8%;
+
+    animation:
+        techFlutuar 8s infinite ease-in-out;
+
+}
+
+
+.tela {
+
+    width: 70px;
+    height: 45px;
+
+    margin: auto;
+
+    border: 2px solid #8b5cf6;
+
+    border-radius: 5px;
+
+}
+
+
+.base {
+
+    width: 90px;
+    height: 5px;
+
+    margin-top: 3px;
+
+    background: #8b5cf6;
+
+    border-radius: 10px;
+
+}
+
+
+.tech-phone {
+
+    position: absolute;
+
+    width: 32px;
+    height: 60px;
+
+    left: 10%;
+    top: 55%;
+
+    border: 2px solid #5f8cff;
+
+    border-radius: 7px;
+
+    animation:
+        techFlutuar 9s infinite ease-in-out reverse;
+
+}
+
+
+.phone-tela {
+
+    position: absolute;
+
+    inset: 5px;
+
+    border: 1px solid #5f8cff;
+
+    border-radius: 4px;
+
+}
+
+
+.tech-window {
+
+    position: absolute;
+
+    width: 100px;
+    height: 65px;
+
+    left: 20%;
+    top: 20%;
+
+    border: 2px solid #a83cff;
+
+    border-radius: 6px;
+
+    animation:
+        techFlutuar 11s infinite ease-in-out;
+
+}
+
+
+.tech-window span {
+
+    display: block;
+
+    width: 8px;
+    height: 8px;
+
+    margin: 8px;
+
+    border-radius: 50%;
+
+    border: 1px solid #a83cff;
+
+}
+
+
+@keyframes techFlutuar {
+
+    0% {
+
+        transform:
+            translateY(0)
+            rotate(-2deg);
+
+    }
+
+    50% {
+
+        transform:
+            translateY(-18px)
+            rotate(2deg);
+
+    }
+
+    100% {
+
+        transform:
+            translateY(0)
+            rotate(-2deg);
+
+    }
+
+}

@@ -1,0 +1,20 @@
+{
+  "name": "AIRES SERVICES",
+  "short_name": "AIRES",
+  "description": "Serviços digitais da AIRES SERVICES",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#080B20",
+  "theme_color": "#17133B",
+  "orientation": "portrait",
+
+  "icons": [
+    {
+      "src": "./imagens/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
